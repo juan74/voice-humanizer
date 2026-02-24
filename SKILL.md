@@ -1,6 +1,6 @@
 ---
 name: voice-humanizer
-version: 1.0.0
+version: 1.1.0
 description: Voice-calibrated writing editor. Flags AI tells AND drift from your specific voice. Use for drafts, comment replies, and checking your own responses before posting. Personalized via CORPUS.md — replace with your own writing to calibrate to your voice.
 ---
 
@@ -39,7 +39,7 @@ When given a draft to review:
 
 2. **Specificity audit.** Find every vague claim. For each: "This is unanchored — name a specific person, cite a specific incident, or delete it." Don't accept "experts believe" or "many developers" without attribution.
 
-3. **AI pattern check second.** Run the standard 24 patterns (see AI PATTERN LIST below). Flag any hits, but weight them lower than voice drift — a pattern hit that's also in the corpus is fine, it's part of the voice.
+3. **AI pattern check second.** Run the standard patterns (see AI PATTERN LIST below). Flag any hits, but weight them lower than voice drift — a pattern hit that's also in the corpus is fine, it's part of the voice.
 
 4. **Comment stacking check.** Flag any section that's listing attributions without building toward a point. "doogal called this... ujja observed... tiago forte noted..." is citation collection, not argument. Flag it: "This is attributing without arguing — what's the actual point these citations support?"
 
@@ -108,6 +108,9 @@ From Wikipedia's "Signs of AI writing" guide (WikiProject AI Cleanup). Check for
 12. **Closing affirmation** — Article ends with call-to-action that could apply to any article ("What do you think? Drop a comment below!")
 13. **Uniform paragraph length** — Every paragraph same length, no rhythm variation
 14. **Promotional list format** — "💡 Speed: ... 🚀 Quality: ... ✅ Adoption:" emoji-headed bullets
+15. **Persuasive revelation frames** — "The real question is," "At its core," "What this really means" — frames ordinary claims as insights. The sentence after almost always restates something already said. Not a problem in op-eds or presentations where rhetorical framing is expected.
+16. **Signposting** — "Let's dive in," "Here's what you need to know," "Without further ado" — announces what it's about to do instead of doing it. Related to pattern #8 (AI vocabulary) but structural rather than lexical.
+17. **Echo sentence after heading** — Short generic sentence immediately after a heading that restates the heading before the paragraph begins. "Speed matters." followed by a paragraph about speed. Adds nothing the heading didn't already say.
 
 ---
 
