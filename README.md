@@ -30,7 +30,7 @@ The [humanizer by Siqi Chen](https://github.com/blader/humanizer) catches generi
 
 ```bash
 mkdir -p ~/.claude/skills
-git clone https://github.com/[username]/voice-humanizer.git ~/.claude/skills/voice-humanizer
+git clone https://github.com/dannwaneri/voice-humanizer.git ~/.claude/skills/voice-humanizer
 ```
 
 Then replace `CORPUS.md` with your own writing. See `SETUP.md` for full instructions.

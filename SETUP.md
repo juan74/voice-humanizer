@@ -11,7 +11,7 @@ A voice-calibrated writing editor for Claude Code. Two things the generic humani
 
 ```bash
 mkdir -p ~/.claude/skills
-git clone https://github.com/[your-username]/voice-humanizer.git ~/.claude/skills/voice-humanizer
+git clone https://github.com/dannwaneri/voice-humanizer.git ~/.claude/skills/voice-humanizer
 ```
 
 Or manually:
