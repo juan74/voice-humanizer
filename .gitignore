@@ -1,0 +1,10 @@
+# Your private corpus - never commit this
+CORPUS.md
+
+# Keep the example template public
+!CORPUS.example.md
+
+# Standard ignores
+.DS_Store
+node_modules/
+.env
