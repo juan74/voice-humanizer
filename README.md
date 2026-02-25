@@ -11,7 +11,7 @@ The [humanizer by Siqi Chen](https://github.com/blader/humanizer) catches generi
 **For drafts:**
 - Voice drift flags (with rewrites in your register)
 - Specificity audit (every unanchored claim, with required substitution)
-- AI pattern check (24 Wikipedia patterns, weighted below voice drift)
+- AI pattern check (weighted below voice drift)
 - Comment stacking detection (attribution lists that aren't building toward a point)
 
 **For incoming comments:**
@@ -43,6 +43,32 @@ Generic humanizers check for patterns to avoid. This one checks for patterns to 
 
 The corpus is private (`.gitignore`). The skill and structure are public.
 
+### Example
+
+Here's voice-humanizer catching drift that a generic humanizer would miss.
+
+**Before (draft):**
+
+> The fingerprint tracks rhythm patterns, paragraph opening style,
+> specificity signals, what you reach for when you need a concrete
+> detail, and — just as important — what you don't do.
+
+**Flag:**
+
+> Voice drift — list of five items where your corpus shows you compress
+> to two. Em dash doing emotional emphasis work your corpus handles
+> structurally.
+
+**After:**
+
+> The fingerprint tracks what you reach for and — just as important —
+> what you don't. Rhythm, specificity, the patterns absent from your
+> corpus that signal drift.
+
+No AI pattern was triggered. A generic humanizer would have passed this.
+Voice-humanizer caught it because the corpus knew this author compresses
+lists. That's the difference.
+
 ---
 
-Built with and for Claude Code. Inspired by [blader/humanizer](https://github.com/blader/humanizer).
+Built for Claude Code. Claude desktop users see SETUP.md for manual usage. Inspired by [blader/humanizer](https://github.com/blader/humanizer).
